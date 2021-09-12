@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="do2-le-jTL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SrollView Method1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftScrollViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHP-Pu-c7M">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXE-xV-Ze0">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt2-RH-G6i">
+                                                <rect key="frame" x="190" y="85" width="34" height="30"/>
+                                                <state key="normal" title="push"/>
+                                                <connections>
+                                                    <segue destination="T4u-W1-gWh" kind="show" id="e2c-yW-5xe">
+                                                        <segue key="commit" inheritsFrom="parent" id="mPd-We-bUp"/>
+                                                        <segue key="preview" inheritsFrom="commit" id="ED7-Yo-6ey"/>
+                                                    </segue>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <constraints>
+                                            <constraint firstItem="Tt2-RH-G6i" firstAttribute="centerX" secondItem="MXE-xV-Ze0" secondAttribute="centerX" id="2ov-dj-l7F"/>
+                                            <constraint firstItem="Tt2-RH-G6i" firstAttribute="centerY" secondItem="MXE-xV-Ze0" secondAttribute="centerY" id="Pe2-MT-mMk"/>
+                                            <constraint firstAttribute="height" constant="200" id="lgZ-aI-6kS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MXE-xV-Ze0" firstAttribute="leading" secondItem="vQD-7w-f0j" secondAttribute="leading" id="bfq-tC-nMa"/>
+                                    <constraint firstItem="MXE-xV-Ze0" firstAttribute="trailing" secondItem="vQD-7w-f0j" secondAttribute="trailing" id="g2m-rJ-MVO"/>
+                                    <constraint firstItem="MXE-xV-Ze0" firstAttribute="top" secondItem="vQD-7w-f0j" secondAttribute="top" id="heY-so-k7Y"/>
+                                    <constraint firstItem="MXE-xV-Ze0" firstAttribute="bottom" secondItem="vQD-7w-f0j" secondAttribute="bottom" id="pMi-Lx-ncG"/>
+                                    <constraint firstItem="MXE-xV-Ze0" firstAttribute="width" secondItem="i75-QB-6tF" secondAttribute="width" id="rMO-wT-a0p"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="vQD-7w-f0j"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="i75-QB-6tF"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MHP-Pu-c7M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tdo-Kf-ppw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MHP-Pu-c7M" secondAttribute="bottom" id="WQY-QV-MVX"/>
+                            <constraint firstItem="MHP-Pu-c7M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cVT-tI-o0V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MHP-Pu-c7M" secondAttribute="trailing" id="sRk-WA-sdC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SrollView Method1" id="cca-EY-8Hp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="88.392857142857139"/>
+        </scene>
+        <!--ScorllView Method2-->
+        <scene sceneID="Qat-d2-LPq">
+            <objects>
+                <viewController id="T4u-W1-gWh" customClass="ViewController1" customModule="SwiftScrollViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dF9-Fg-aYh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIb-H9-eIk">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDe-Jy-xrp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5I-f9-mKx">
+                                                <rect key="frame" x="20" y="960" width="374" height="30"/>
+                                                <state key="normal" title="bottom"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bov-Gf-DkQ">
+                                                <rect key="frame" x="20" y="90" width="374" height="30"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="backAction:" destination="T4u-W1-gWh" eventType="touchUpInside" id="7ga-ao-LA7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bov-Gf-DkQ" secondAttribute="trailing" constant="20" id="62g-Wg-X0i"/>
+                                            <constraint firstAttribute="trailing" secondItem="o5I-f9-mKx" secondAttribute="trailing" constant="20" id="9ka-eo-5B0"/>
+                                            <constraint firstAttribute="height" constant="1000" id="cpV-a4-5JZ"/>
+                                            <constraint firstItem="bov-Gf-DkQ" firstAttribute="leading" secondItem="kDe-Jy-xrp" secondAttribute="leading" constant="20" id="dGh-fd-eDx"/>
+                                            <constraint firstItem="bov-Gf-DkQ" firstAttribute="top" secondItem="kDe-Jy-xrp" secondAttribute="top" constant="90" id="gLY-ig-gg4"/>
+                                            <constraint firstAttribute="bottom" secondItem="o5I-f9-mKx" secondAttribute="bottom" constant="10" id="wE3-OS-tNa"/>
+                                            <constraint firstItem="o5I-f9-mKx" firstAttribute="leading" secondItem="kDe-Jy-xrp" secondAttribute="leading" constant="20" id="zeU-1a-fYW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kDe-Jy-xrp" firstAttribute="top" secondItem="HIb-H9-eIk" secondAttribute="top" id="EOp-kH-OhG"/>
+                                    <constraint firstItem="kDe-Jy-xrp" firstAttribute="leading" secondItem="HIb-H9-eIk" secondAttribute="leading" id="Zb3-Jy-ZaP"/>
+                                    <constraint firstItem="kDe-Jy-xrp" firstAttribute="centerX" secondItem="HIb-H9-eIk" secondAttribute="centerX" id="cJu-dE-Jln"/>
+                                    <constraint firstAttribute="bottom" secondItem="kDe-Jy-xrp" secondAttribute="bottom" id="dvw-C9-QRA"/>
+                                    <constraint firstAttribute="trailing" secondItem="kDe-Jy-xrp" secondAttribute="trailing" id="lOS-q2-aRx"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="aNP-V1-Fvv"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Nfv-12-lzT"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wKV-87-qgl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HIb-H9-eIk" secondAttribute="trailing" id="A6q-Be-hIy"/>
+                            <constraint firstAttribute="bottom" secondItem="HIb-H9-eIk" secondAttribute="bottom" id="V5C-es-dlb"/>
+                            <constraint firstItem="HIb-H9-eIk" firstAttribute="leading" secondItem="dF9-Fg-aYh" secondAttribute="leading" id="iTW-82-cMV"/>
+                            <constraint firstItem="HIb-H9-eIk" firstAttribute="top" secondItem="wKV-87-qgl" secondAttribute="top" id="iq5-WG-a5V"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ScorllView Method2" id="hWp-et-GbM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTJ-c1-ZjH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="88"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oUm-wG-hB8">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBt-Hd-Stl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="do2-le-jTL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tMd-vR-aph">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mHq-iX-Gg3"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-845" y="88"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="e2c-yW-5xe"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
